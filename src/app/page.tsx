@@ -1,8 +1,11 @@
+//Import Needed Components
+import Nav from "@/components/HomePage/Nav";
+
 
 export default function Home() {
   return (
-    <main className="bg-bgLight dark:bg-bgDark">
-      <p>This is the home page sample</p>
+    <main className="text-textLight bg-bgLight dark:bg-bgDark dark:text-textDark">
+      <Nav />
     </main>
   );
 }
