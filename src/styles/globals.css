@@ -1,3 +1,33 @@
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For the custom mouse */
+.cursor {
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease-in-out;
+}
+
+.cursor-inner {
+  width: 8px;
+  height: 8px;
+  background-color: #0C5E92;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-outer {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #0C5E92;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.cursor-inner.click,
+.cursor-outer.click {
+  transform: scale(0.8);
+}

@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
+
+//Import Utils
 import { cn } from "@/lib/utils";
+
+//Import theme provider
 import { ThemeProvider } from "@/components/theme-provider";
+
+//Import Custom Cursor Component
+import CustomCursor from "@/components/CustomCursor";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,12 +26,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn("antialiased", inter.className)}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+            <CustomCursor />
             {children}
           </ThemeProvider>
       </body>
