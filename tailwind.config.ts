@@ -28,9 +28,6 @@ const config = {
         accentLight: "#E8F1F8",
         accentDark: "#2C3E50"
       },
-      transitionDuration: {
-        '2000': '2000ms',
-      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

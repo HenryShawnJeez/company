@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { inter , hedvig } from "@/lib/fonts";
 import "../styles/globals.css";
 
 //Import Utils
@@ -11,7 +11,6 @@ import { ThemeProvider } from "@/components/theme-provider";
 //Import Custom Cursor Component
 import CustomCursor from "@/components/CustomCursor";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Melvin Trade B.V",
@@ -25,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("antialiased overflow-hidden", inter.className)}>
+      <body className={cn("antialiased overflow-x-hidden", `${inter.variable} ${hedvig.variable}`)}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
             <CustomCursor />
             {children}
