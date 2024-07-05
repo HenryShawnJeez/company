@@ -28,7 +28,7 @@ const Nav = () => {
     };
 
     return (
-        <main className="relative">
+        <main className="sticky">
             <div className="flex justify-between items-center md:text-sm lg:text-base xl:text-lg py-6 px-5 sm:px-10 md:px-20 xl:px-32 bg-bgLight text-textLight">
                 <Image src={logo} alt='Logo' className='w-20 lg:w-28' />
                 <div className="p-2 sm:p-3 bg-primary md:hidden cursor-pointer">
@@ -40,15 +40,15 @@ const Nav = () => {
                         <CloseCircle size="32" variant="Bold" className='text-primary' />
                     </div>
 
-                    <nav className="flex flex-col gap-y-5 md:gap-y-0 md:flex-row md:items-center md:gap-x-3 lg:gap-x-5 xl:gap-x-10 mt-20 md:mt-0">
-                        <Link href="/" className={`${pathname === "/" && "text-textDark border-bgLight md:text-primary font-semibold"} border-b border-bgDark py-2 hover:border-bgLight md:border-0 font-medium hover:text-textDark md:hover:text-primary duration-300`}>
+                    <nav className="flex flex-col gap-y-7 md:gap-y-0 md:flex-row md:items-center md:gap-x-3 lg:gap-x-5 xl:gap-x-10 mt-20 md:mt-0">
+                        <Link href="/" className={`${pathname === "/" && "text-textDark border-bgLight md:text-primary font-semibold"} border-b-2 border-bgDark py-2 hover:border-bgLight md:border-0 font-medium hover:text-textDark md:hover:text-primary duration-300`}>
                             Home
                         </Link>
-                        <Link href="about" className={`${pathname === "/about" && "text-textDark border-bgLight md:text-primary font-semibold"} border-b border-bgDark py-2 hover:border-bgLight md:border-0 font-medium hover:text-textDark md:hover:text-primary duration-300`}>
+                        <Link href="about" className={`${pathname === "/about" && "text-textDark border-bgLight md:text-primary font-semibold"} border-b-2 border-bgDark py-2 hover:border-bgLight md:border-0 font-medium hover:text-textDark md:hover:text-primary duration-300`}>
                             About Us
                         </Link>
                         <div className="relative group" onMouseEnter={() => setIsServiceOpen(true)} onMouseLeave={() => setIsServiceOpen(false)}>
-                            <button className={`${pathname === "/services/petroleum" || pathname === "/services/machinery" && "border-bgLight py-2 md:border-0 text-textDark md:text-primary font-semibold" } text-left border-b border-bgDark md:border-0 py-2 hover:border-bgLight w-full font-medium hover:text-textDark md:hover:text-primary duration-300`}>
+                            <button className={`${pathname === "/services/petroleum" || pathname === "/services/machinery" && "border-bgLight py-2 md:border-0 text-textDark md:text-primary font-semibold"} text-left border-b-2 border-bgDark md:border-0 py-2 hover:border-bgLight w-full font-medium hover:text-textDark md:hover:text-primary duration-300`}>
                                 Services
                             </button>
                             <div className={`absolute left-0 mt-2 bg-bgLight md:bg-primary shadow-lg overflow-hidden transition-all duration-300 ${isServiceOpen ? 'w-full md:w-40 max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}>
@@ -60,7 +60,7 @@ const Nav = () => {
                                 </Link>
                             </div>
                         </div>
-                        <Link href="contact" className={`${pathname === "/contact" && "bg-bgLight text-textLight border border-textLight" } hover:bg-bgLight hover:text-textLight hover:border hover:border-textLight text-center px-5 py-3 text-textDark font-medium bg-bgDark duration-300`}>
+                        <Link href="contact" className={`${pathname === "/contact" && "bg-bgLight text-textLight border border-textLight"} md:border-2 hover:bg-bgLight hover:text-textLight md:hover:border-2 md:hover:border-textLight text-center px-5 py-3 text-textDark font-medium bg-bgDark duration-300`}>
                             Contact
                         </Link>
                         <ModeToggle />
