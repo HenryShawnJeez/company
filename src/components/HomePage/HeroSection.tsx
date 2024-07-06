@@ -55,10 +55,10 @@ const HeroSection = () => {
                     className={`h-full w-full object-cover object-center transition-transform duration-500 ease-in-out ${animate ? "scale-110 opacity-0" : "scale-100 opacity-100"}`}
                 />
                 <section className="absolute h-full w-full top-0 left-0 bg-bgDark/80">
-                    <div className="h-full w-full flex flex-col justify-center md:flex-row md:justify-between md:items-center text-xs md:text-sm xl:text-base py-6 px-5 sm:px-10 md:px-20 xl:px-32">
+                    <div className="h-full w-full flex flex-col justify-center md:flex-row md:justify-between md:items-center py-6 px-5 sm:px-10 md:px-20 xl:px-32">
                         <div className="md:w-[59%] xl:w-[55%] flex flex-col gap-y-10 text-textDark">
                             <h1
-                                className={`hedvig text-lg sm:text-xl md:text-2xl xl:text-3xl 2xl:text-5xl font-semibold tracking-wider transform transition-all duration-500 ease-in-out ${animate ? "-translate-y-10 opacity-0" : "translate-y-0 opacity-100"}`}
+                                className={`hedvig text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold tracking-wider transform transition-all duration-500 ease-in-out ${animate ? "-translate-y-10 opacity-0" : "translate-y-0 opacity-100"}`}
                             >
                                { currentNumber === 0 ? en.Navigation.heading0 : currentNumber === 1 ? en.Navigation.heading1 : currentNumber === 2 ? en.Navigation.heading2 : "" }
                             </h1>

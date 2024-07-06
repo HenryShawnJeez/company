@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("antialiased overflow-x-hidden", `${inter.variable} ${hedvig.variable}`)}>
+      <body className={cn("antialiased overflow-x-hidden text-xs md:text-sm xl:text-base", `${inter.variable} ${hedvig.variable}`)}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
             <CustomCursor />
             {children}
