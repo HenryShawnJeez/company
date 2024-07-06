@@ -3,18 +3,19 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
 
 // Import Needed Images
 import heroImg0 from "../../../public/heroImg1.jpeg";
 import heroImg1 from "../../../public/heroImg2.jpg";
 import heroImg2 from "../../../public/heroImg4.jpeg";
 
+//Import Needed Data
+import en from "../../../messages/en.json"
+
 // Import Needed Icons
 import { ArrowCircleLeft, ArrowCircleRight } from "iconsax-react";
 
 const HeroSection = () => {
-    const t = useTranslations("Navigation");
 
     const [currentNumber, setCurrentNumber] = useState<number>(0);
     const [animate, setAnimate] = useState<boolean>(false);
@@ -59,18 +60,18 @@ const HeroSection = () => {
                             <h1
                                 className={`hedvig text-lg sm:text-xl md:text-2xl xl:text-3xl 2xl:text-5xl font-semibold tracking-wider transform transition-all duration-500 ease-in-out ${animate ? "-translate-y-10 opacity-0" : "translate-y-0 opacity-100"}`}
                             >
-                               {t(`heading${currentNumber}`)}
+                               { currentNumber === 0 ? en.Navigation.heading0 : currentNumber === 1 ? en.Navigation.heading1 : currentNumber === 2 ? en.Navigation.heading2 : "" }
                             </h1>
                             <p
                                 className={`text-textDark/80 transform transition-all duration-500 ease-in-out ${animate ? "-translate-y-10 opacity-0" : "translate-y-0 opacity-100"}`}
                             >
-                                {t(`subheading${currentNumber}`)}
+                                { currentNumber === 0 ? en.Navigation.subheading0 : currentNumber === 1 ? en.Navigation.subheading1 : currentNumber === 2 ? en.Navigation.subheading2 : "" }
                             </p>
                             <Link
                                 href=""
                                 className="bg-bgDark text-textDark py-3 md:py-4 w-72 text-center border-2 border-bgDark hover:bg-inherit duration-300"
                             >
-                                {t("header")}
+                                {en.Navigation.header}
                             </Link>
                         </div>
                         <div className="md:w-[39%] xl:w-[35%] flex flex-col items-end gap-y-3 mt-20 md:mt-0">

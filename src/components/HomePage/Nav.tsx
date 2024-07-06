@@ -7,7 +7,6 @@ import Image from 'next/image';
 
 //Import Needed Components
 import { ModeToggle } from './ToggleMode';
-import ToggleLanguage from './ToggleLanguage';
 
 //Import Needed Images
 import logo from "../../../public/logo.svg"
@@ -28,14 +27,6 @@ const Nav = () => {
         setIsOpen((prev) => !prev);
     };
 
-    const languages = ['en', 'es', 'zh', 'ar', 'fr', 'de', 'pt', 'ru', 'ja']
-
-    //Language function
-    const checkLanguageRoute = (pathname: string) => {
-        return languages.some(lang => pathname.endsWith(`/${lang}`));
-    }
-    const isLanguageRoute = checkLanguageRoute(pathname);
-    
     return (
         <main className="sticky z-20">
             <div className="flex justify-between items-center md:text-sm lg:text-base xl:text-lg py-6 px-5 sm:px-10 md:px-20 xl:px-32 bg-bgLight text-textLight">
@@ -51,7 +42,7 @@ const Nav = () => {
                     </div>
 
                     <nav className="flex flex-col gap-y-7 md:gap-y-0 md:flex-row md:items-center md:gap-x-3 lg:gap-x-5 xl:gap-x-10 mt-20 md:mt-0">
-                        <Link href="/" className={`${isLanguageRoute  &&  "text-textDark md:text-primary font-bold"} tracking-tight hover:text-textDark md:hover:text-primary duration-300`}>
+                        <Link href="/" className={`${pathname === "/"  &&  "text-textDark md:text-primary font-bold"} tracking-tight hover:text-textDark md:hover:text-primary duration-300`}>
                             Home
                         </Link>
                         <Link href="/about" className={`${pathname === "/about" && "text-textDark md:text-primary font-bold"} tracking-tight hover:text-textDark md:hover:text-primary duration-300`}>
@@ -74,10 +65,8 @@ const Nav = () => {
                         <Link href="/contact" className={`${pathname === "/contact" && "bg-bgLight text-textLight border border-textLight"} md:border-2 hover:bg-bgLight hover:text-textLight md:hover:border-2 md:hover:border-textLight text-center px-5 py-3 text-textDark bg-bgDark duration-300`}>
                             Contact
                         </Link>
-                        <div className='flex gap-x-3'>
-                            <ModeToggle />
-                            <ToggleLanguage />
-                        </div>
+
+                        <ModeToggle />
                         
                     </nav>
                 </div>
