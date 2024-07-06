@@ -23,7 +23,7 @@ const ToggleLanguage = () => {
     return (
         <Select onValueChange={handleChange} >
             <SelectTrigger>
-                <SelectValue placeholder={localActive.toUpperCase()} />
+                <SelectValue className="text-accentLight cursor-pointer md:text-secondary" placeholder={localActive.toUpperCase()} />
                 <p className="sr-only">{t("languageSelect")}</p>
             </SelectTrigger>
             <SelectContent>
