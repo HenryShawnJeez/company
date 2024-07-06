@@ -57,9 +57,9 @@ const HeroSection = () => {
                     <div className="h-full w-full flex flex-col justify-center md:flex-row md:justify-between md:items-center text-xs md:text-sm xl:text-base py-6 px-5 sm:px-10 md:px-20 xl:px-32">
                         <div className="md:w-[59%] xl:w-[55%] flex flex-col gap-y-10 text-textDark">
                             <h1
-                                className={`text-lg sm:text-xl md:text-2xl xl:text-3xl 2xl:text-5xl font-semibold hedvig tracking-wider transform transition-all duration-500 ease-in-out ${animate ? "-translate-y-10 opacity-0" : "translate-y-0 opacity-100"}`}
+                                className={`hedvig text-lg sm:text-xl md:text-2xl xl:text-3xl 2xl:text-5xl font-semibold tracking-wider transform transition-all duration-500 ease-in-out ${animate ? "-translate-y-10 opacity-0" : "translate-y-0 opacity-100"}`}
                             >
-                                {t(`heading${currentNumber}`)}.
+                               {t(`heading${currentNumber}`)}
                             </h1>
                             <p
                                 className={`text-textDark/80 transform transition-all duration-500 ease-in-out ${animate ? "-translate-y-10 opacity-0" : "translate-y-0 opacity-100"}`}
