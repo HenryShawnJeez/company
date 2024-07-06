@@ -36,20 +36,20 @@ const Nav = () => {
                 </div>
                 <div
                     className={`${isOpen ? "translate-x-0 delay-500" : "-translate-x-full"} fixed md:translate-x-0 md:static top-0 left-0 w-72 p-4 md:p-0 md:w-auto h-full md:h-auto bg-inherit transition-transform duration-500 ease-in-out z-50`}>
-                    <p className='md:hidden text-lg font-semibold mt-2 text-primary'>Melvin Trade B.V</p>
+                    <Image src={logo} alt='Logo' className='md:hidden w-16 h-8 mt-2' />
                     <div className="md:hidden absolute top-4 right-4 cursor-pointer bg-bgLight p-1" onClick={toggleMenu}>
                         <CloseCircle size="32" variant="Bold" className='text-red-800' />
                     </div>
 
                     <nav className="flex flex-col gap-y-7 md:gap-y-0 md:flex-row md:items-center md:gap-x-3 lg:gap-x-5 xl:gap-x-10 mt-20 md:mt-0">
-                        <Link href="/" className={`${pathname === "/"  &&  "text-primary font-bold"} tracking-tight hover:text-primary duration-300`}>
+                        <Link href="/" className={`${pathname === "/"  ? "text-primary font-bold" : "font-medium" } tracking-tight hover:text-primary duration-300`}>
                             Home
                         </Link>
-                        <Link href="/about" className={`${pathname === "/about" && "text-primary font-bold"} tracking-tight hover:text-primary duration-300`}>
+                        <Link href="/about" className={`${pathname === "/about" ? "text-primary font-bold" : "font-medium" } tracking-tight hover:text-primary duration-300`}>
                             About Us
                         </Link>
                         <div className="relative group" onMouseEnter={() => setIsServiceOpen(true)} onMouseLeave={() => setIsServiceOpen(false)}>
-                            <button className={`${pathname === "/services/petroleum" || pathname === "/services/machinery" && "text-primary font-bold"} tracking-tight text-left hover:text-primary duration-300`}>
+                            <button className={`${pathname === "/services/petroleum" || pathname === "/services/machinery" ? "text-primary font-bold" : "font-medium" } tracking-tight text-left hover:text-primary duration-300`}>
                                 Services
                             </button>
                             <div className={`absolute left-0 mt-2 bg-bgLight md:bg-primary shadow-lg overflow-hidden transition-all duration-300 ${isServiceOpen ? 'w-40 max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}>
@@ -62,7 +62,7 @@ const Nav = () => {
                             </div>
                         </div>
                         <div className='md:hidden border-t border-gray-300 my-2'></div>
-                        <Link href="/contact" className={`${pathname === "/contact" && "bg-bgLight text-textLight border border-textLight"} font-semibold border-2 hover:bg-bgLight hover:text-textLight hover:border-textLight text-center px-5 py-3 text-textDark bg-bgDark duration-300`}>
+                        <Link href="/contact" className={`${pathname === "/contact" ? "bg-bgLight text-textLight border border-textLight font-semibold" : "font-medium"} border-2 hover:bg-bgLight hover:text-textLight hover:border-textLight text-center px-5 py-3 text-textDark bg-bgDark duration-300`}>
                             Contact
                         </Link>
                         <div className='absolute bottom-4 right-4 md:static'>

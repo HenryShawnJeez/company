@@ -69,7 +69,7 @@ const HeroSection = () => {
                             </p>
                             <Link
                                 href="/contact"
-                                className={`bg-bgDark text-textDark py-3 md:py-4 w-72 text-center border-2 border-bgDark hover:bg-inherit duration-300 ${animate ? "-translate-y-10 opacity-0" : "translate-y-0 opacity-100"}`}>
+                                className={`bg-bgDark text-textDark py-3 md:py-4 w-72 text-center border-2 border-bgDark hover:bg-inherit duration-300 font-medium ${animate ? "-translate-y-10 opacity-0" : "translate-y-0 opacity-100"}`}>
                                 {en.Navigation.header}
                             </Link>
                         </div>
