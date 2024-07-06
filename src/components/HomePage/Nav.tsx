@@ -7,6 +7,7 @@ import Image from 'next/image';
 
 //Import Needed Components
 import { ModeToggle } from './ToggleMode';
+import ToggleLanguage from './ToggleLanguage';
 
 //Import Needed Images
 import logo from "../../../public/logo.svg"
@@ -73,7 +74,11 @@ const Nav = () => {
                         <Link href="/contact" className={`${pathname === "/contact" && "bg-bgLight text-textLight border border-textLight"} md:border-2 hover:bg-bgLight hover:text-textLight md:hover:border-2 md:hover:border-textLight text-center px-5 py-3 text-textDark font-medium bg-bgDark duration-300`}>
                             Contact
                         </Link>
-                        <ModeToggle />
+                        <div className='flex gap-x-3'>
+                            <ModeToggle />
+                            <ToggleLanguage />
+                        </div>
+                        
                     </nav>
                 </div>
             </div>

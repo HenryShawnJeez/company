@@ -30,7 +30,7 @@ const HeroSection = () => {
                         <div className="md:w-[59%] xl:w-[55%] flex flex-col gap-y-10 text-textDark">
                             <h1 className="text-lg sm:text-xl md:text-2xl xl:text-3xl 2xl:text-5xl font-semibold hedvig tracking-wider">Mastering Oil & Gas Transactions.</h1>
                             <p className="text-textDark/80">At Melvin Trade B.V, we excel in facilitating seamless oil and gas transactions, ensuring every step is handled with precision and expertise. Our comprehensive approach encompasses compliance, profitability maximization, and in-depth market intelligence. With our expert guidance, you can confidently navigate the complexities of the oil and gas industry, secure in the knowledge that every detail is managed to the highest standard.</p>
-                            <Link href="" className="bg-bgDark text-textDark py-3 md:py-4 w-60 text-center border-2 border-bgDark hover:bg-inherit duration-300">{t('header')}</Link>
+                            <Link href="" className="bg-bgDark text-textDark py-3 md:py-4 w-72 text-center border-2 border-bgDark hover:bg-inherit duration-300">{t('header')}</Link>
                         </div>
                         <div className="md:w-[39%] xl:w-[35%] flex flex-col items-end gap-y-2 mt-20 md:mt-0">
                             <ArrowCircleLeft size="36" className="hover:text-textDark duration-300 text-textDark/50" />
