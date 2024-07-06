@@ -8,5 +8,11 @@
         "subheading2": "Melvin Trade B.V. est votre source principale pour les machines industrielles de premier ordre, offrant un large éventail d'équipements pour répondre à des exigences opérationnelles diverses. Notre spécialisation dans l'approvisionnement, la vente et la facilitation des transactions de machines garantit que vous recevez des équipements de haute qualité et fiables. Nous soutenons votre entreprise à chaque étape, de l'approvisionnement au service après-vente, vous aidant à rester à la pointe des avancées technologiques et à maintenir l'efficacité opérationnelle dans un marché compétitif.",
         "header": "Collaborez avec nous",
         "languageSelect": "Changer de langue"
+    },
+    "Interest": {
+        "question": "Vous cherchez à vendre votre pétrole et gaz efficacement ?",
+        "firstName": "Prénom",
+        "lastName": "Nom de famille",
+        "email": "E-mail"
     }
 }

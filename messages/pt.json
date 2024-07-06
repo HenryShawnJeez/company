@@ -8,5 +8,11 @@
         "subheading2": "A Melvin Trade B.V. é sua principal fonte de maquinário industrial de alta qualidade, oferecendo uma ampla variedade de equipamentos para atender a diversas demandas operacionais. Nossa especialização em aquisição, venda e facilitação de transações de maquinário garante que você receba equipamentos de alta qualidade e confiabilidade. Apoiamo-lo em todas as etapas do seu negócio, desde a aquisição até ao serviço pós-venda, ajudando-o a manter-se à frente dos avanços tecnológicos e a manter a eficiência operacional num mercado competitivo.",
         "header": "Colabore conosco",
         "languageSelect": "Mudar idioma"
+    },
+    "Interest": {
+        "question": "Procurando vender seu petróleo e gás de maneira eficiente?",
+        "firstName": "Primeiro Nome",
+        "lastName": "Sobrenome",
+        "email": "E-mail"
     }
 }

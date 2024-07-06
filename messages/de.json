@@ -8,5 +8,11 @@
         "subheading2": "Melvin Trade B.V. ist Ihre erstklassige Quelle für hochwertige Industriemaschinen und bietet eine breite Palette von Geräten, um unterschiedliche betriebliche Anforderungen zu erfüllen. Unsere Spezialisierung auf Beschaffung, Verkauf und Vermittlung von Maschinen sorgt dafür, dass Sie qualitativ hochwertige und zuverlässige Geräte erhalten. Wir unterstützen Ihr Geschäft in jeder Phase, von der Beschaffung bis zum After-Sales-Service, und helfen Ihnen, technologischen Fortschritten einen Schritt voraus zu bleiben und die betriebliche Effizienz in einem wettbewerbsintensiven Markt aufrechtzuerhalten.",
         "header": "Arbeiten Sie mit uns zusammen",
         "languageSelect": "Sprache ändern"
+    },
+    "Interest": {
+        "question": "Möchten Sie Ihr Öl und Gas effizient verkaufen?",
+        "firstName": "Vorname",
+        "lastName": "Nachname",
+        "email": "E-Mail"
     }
 }
