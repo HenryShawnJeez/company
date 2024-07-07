@@ -28,7 +28,7 @@ const Nav = () => {
     };
 
     return (
-        <main className="sticky z-20">
+        <main className="fixed w-full z-20">
             <div className="flex justify-between items-center text-sm lg:text-base xl:text-lg py-6 px-5 sm:px-10 md:px-20 xl:px-32 bg-bgLight text-textLight">
                 <Image src={logo} alt='Logo' className='w-20 lg:w-28' />
                 <div className="p-2 sm:p-3 bg-primary md:hidden cursor-pointer">

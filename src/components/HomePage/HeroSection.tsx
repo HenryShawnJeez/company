@@ -48,7 +48,7 @@ const HeroSection = () => {
 
     return (
         <main>
-            <div className="relative w-full h-[40rem] sm:h-[42rem] md:h-[44rem] lg:h-[46rem] xl:h-[48rem] 2xl:h-[50rem] z-10 overflow-hidden">
+            <div className="relative w-full h-[50rem] sm:h-[52rem] md:h-[54rem] lg:h-[56rem] xl:h-[58rem] 2xl:h-[60rem] z-10 overflow-hidden">
                 <Image
                     src={images[currentNumber]}
                     alt={`Hero Section ${currentNumber}`}
