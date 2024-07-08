@@ -10,6 +10,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 //Import Custom Cursor Component
 import CustomCursor from "@/components/CustomCursor";
+import Nav from "@/components/HomePage/Nav";
 
 
 export const metadata: Metadata = {
@@ -24,9 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("antialiased overflow-x-hidden text-xs md:text-sm xl:text-base", `${inter.variable} ${hedvig.variable}`)}>
+      <body className={cn("antialiased overflow-x-hidden text-xs md:text-sm xl:text-base bg-bgLight dark:bg-bgDark text-textLight dark:text-textDark", `${inter.variable} ${hedvig.variable}`)}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
             <CustomCursor />
+            <Nav />
             {children}
           </ThemeProvider>
       </body>

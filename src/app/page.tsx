@@ -9,8 +9,7 @@ import ScrollReveal from "@/components/RevelOnScroll";
 
 export default function Home() {
   return (
-    <main className="bg-bgLight dark:bg-bgDark text-textLight dark:text-textDark">
-      <Nav />
+    <main>
       <HeroSection />
       <Interested />
       <ScrollReveal>
