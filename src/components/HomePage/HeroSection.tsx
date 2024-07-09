@@ -52,7 +52,7 @@ const HeroSection = () => {
                 <Image
                     src={images[currentNumber]}
                     alt={`Hero Section ${currentNumber}`}
-                    className={`h-full w-full object-cover object-center transition-transform duration-500 ease-in-out ${animate ? "scale-110 opacity-0" : "scale-100 opacity-100"}`}
+                    className={`h-full w-full object-cover object-center transition-transform duration-500 ease-in-out ${animate ? "scale-110 opacity-0 duration-500" : "scale-100 opacity-100 duration-300"}`}
                 />
                 <section className="absolute h-full w-full top-0 left-0 bg-bgDark/80">
                     <div className="h-full w-full flex flex-col justify-center md:flex-row md:justify-between md:items-center py-6 px-5 sm:px-10 md:px-20 xl:px-32">

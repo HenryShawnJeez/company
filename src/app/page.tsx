@@ -14,6 +14,8 @@ export default function Home() {
       <Interested />
       <ScrollReveal>
         <MapSection />
+      </ScrollReveal>
+      <ScrollReveal>
         <Faq />
       </ScrollReveal>
     </main>
