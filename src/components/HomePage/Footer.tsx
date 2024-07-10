@@ -10,10 +10,11 @@ const Footer = () => {
         <main className="px-5 sm:px-10 md:px-20 xl:px-32 py-10 mt-20 bg-bgLight flex flex-col gap-y-10 md:gap-y-0 gap-x-5 md:flex-row text-textLight md:justify-between">
             <Image src={logo} alt="Logo" className='w-20 lg:w-28 h-10 lg:h-14' />
             <section className="flex gap-10 flex-wrap">
-                <div>
+                <div className="flex flex-col gap-y-2">
                     <h1 className="font-semibold text-sm md:text-base xl:text-lg">Company Details</h1>
-                    <p className="mt-2">Einsteinstraat 26, 3281 NJ Numansdorp, Netherlands</p>
-                    <p className="mt-2">Emailaddress@companylink.com</p>
+                    <p><span className="text-primary mr-1 font-medium">Address:</span>Einsteinstraat 26, 3281 NJ Numansdorp, Netherlands</p>
+                    <p><span className="text-primary mr-1 font-medium">Email:</span>Contact@melvintradebv.com</p>
+                    <p><span className="text-primary mr-1 font-medium">Call us:</span>+3197006520618</p>
                 </div>
                 <div className="flex flex-col gap-y-2">
                     <h1 className="font-semibold text-sm md:text-base xl:text-lg">Quick links</h1>
