@@ -33,7 +33,7 @@ const Footer = () => {
                     </div>
                 </section>
             </main>
-            <div className="p-4 border-t border-primary/10 flex items-center justify-center">
+            <div className="p-4 bg-black border-t border-primary/10 flex items-center justify-center">
                 <p>&copy; 2024 Melvin Trade B.V. All Rights Reserved</p>
             </div>
         </section>
