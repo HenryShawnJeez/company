@@ -11,7 +11,7 @@ type CustomHeroSectionProps = {
 
 const CustomHeroSection = ({ pageName, currentPage, imgSrc }: CustomHeroSectionProps) => {
     return (
-        <main className="relative w-full h-[35rem] sm:h-[37rem] md:h-[39rem] lg:h-[41rem] xl:h-[43rem] 2xl:h-[45rem]">
+        <main className="relative w-full h-[35rem] sm:h-[37rem] md:h-[39rem] lg:h-[41rem] xl:h-[43rem] 2xl:h-[45rem] border-b border-primary/20">
             <Image src={imgSrc} alt="Logo" className="h-full w-full object-cover object-center opacity-10" />
             <section className="absolute h-full w-full top-0 left-0 bg-bgDark/80 text-textDark flex items-center justify-center">
                 <div className="flex flex-col gap-y-10 text-right">

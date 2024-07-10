@@ -15,11 +15,11 @@ const ScrollReveal = ({ children }: { children: React.ReactNode }) => {
   }, [controls, inView]);
 
   const variants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 100 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: 'easeOut' }
+      transition: { duration: 1.0, ease: 'easeOut' }
     }
   };
 

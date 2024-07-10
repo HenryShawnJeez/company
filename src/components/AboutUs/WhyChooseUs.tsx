@@ -7,10 +7,10 @@ import chooseUsImg from "../../../public/service.jpg";
 const WhyChooseUs = () => {
     return (
         <main className="py-6 px-5 sm:px-10 md:px-20 xl:px-32 mt-20">
-            <section className="flex flex-col gap-y-5 md:gap-y-0 md:flex-row md:justify-between">
+            <section className="flex flex-col gap-y-20 md:gap-y-0 md:flex-row md:justify-between">
                 <div className="relative md:w-[45%] xl:w-[48%] h-[30rem]">
                     <Image src={chooseUsImg} alt="Machine Image" className="h-full object-cover object-center md:w-[80%] rounded-2xl" />
-                    <div className="absolute w-[80%] h-full -z-10 left-10 top-10 bg-yellow-400 dark:bg-yellow-600 rounded-2xl"></div>
+                    <div className="absolute w-full lg:w-[80%] h-full -z-10 left-10 top-10 bg-yellow-400 dark:bg-yellow-600 rounded-2xl"></div>
                 </div>
                 <div className="md:w-[45%] xl:w-[48%] flex flex-col gap-y-5 md:gap-y-7 xl:gap-y-10">
                     <p className="text-base md:text-lg xl:text-xl opacity-70">Why Choose Us</p>
