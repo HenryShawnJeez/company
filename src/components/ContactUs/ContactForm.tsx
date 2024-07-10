@@ -27,15 +27,15 @@ const ContactForm = () => {
                 <form className="w-full lg:w-[90%] xl:w-[80%] mx-auto border border-accentLight dark:border-accentDark flex flex-col gap-y-5 p-4 sm:p-6 md:p-8 xl:p-10">
                     <div className="flex flex-col gap-y-1">
                         <label className="cursor-pointer" htmlFor="name">Name</label>
-                        <input type="text" name="name" id="name" className="px-5 py-3 focus:outline-none border focus:border-primary dark:focus:border-secondary" placeholder="John Doe" />
+                        <input type="text" name="name" id="name" className="px-5 py-3 focus:outline-none border focus:border-primary dark:focus:border-secondary caret-primary" placeholder="John Doe" />
                     </div>
                     <div className="flex flex-col gap-y-1">
                         <label className="cursor-pointer" htmlFor="email">Email</label>
-                        <input type="email" name="email" id="email" className="px-5 py-3 focus:outline-none border focus:border-primary dark:focus:border-secondary" placeholder="Johndoe@gmail.com" />
+                        <input type="email" name="email" id="email" className="px-5 py-3 focus:outline-none border focus:border-primary dark:focus:border-secondary caret-primary" placeholder="Johndoe@gmail.com" />
                     </div>
                     <div className="flex flex-col gap-y-1">
                         <label className="cursor-pointer" htmlFor="message">Our Message</label>
-                        <textarea name="message" id="message" className="px-5 py-3 h-32 focus:outline-none border focus:border-primary dark:focus:border-secondary resize-none"></textarea>
+                        <textarea name="message" id="message" className="px-5 py-3 h-32 focus:outline-none border focus:border-primary dark:focus:border-secondary resize-none caret-primary" placeholder="Your Message"></textarea>
                     </div>
                 </form>
             </div>
