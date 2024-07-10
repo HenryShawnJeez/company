@@ -6,6 +6,7 @@ import MapSection from "@/components/HomePage/MapSection";
 import ScrollReveal from "@/components/RevelOnScroll";
 import Faq from "@/components/HomePage/Faq";
 import Cards from "@/components/HomePage/Cards";
+import Footer from "@/components/HomePage/Footer";
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <ScrollReveal>
         <Cards />
       </ScrollReveal>
+      <Footer />
     </main>
   );
 }
