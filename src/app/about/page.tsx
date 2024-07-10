@@ -1,7 +1,10 @@
+//Import Needed Components
+import CustomHeroSection from "@/components/CustomHeroSection";
+
 const page = () => {
     return ( 
         <main>
-            <p>This is the about us page</p>
+            <CustomHeroSection />
         </main>
      );
 }

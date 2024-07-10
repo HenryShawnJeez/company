@@ -29,7 +29,7 @@ const Nav = () => {
 
     return (
         <main className="sticky top-0 left-0 z-20">
-            <div className="flex justify-between items-center text-sm lg:text-base xl:text-lg py-6 px-5 sm:px-10 md:px-20 xl:px-32 bg-bgLight text-textLight">
+            <div className="flex justify-between items-center text-sm lg:text-base xl:text-lg py-6 px-5 sm:px-10 md:px-20 xl:px-32 bg-bgLight text-textLight border-b border-primary/10 dark:border-none">
                 <Image src={logo} alt='Logo' className='w-20 lg:w-28' />
                 <div className="p-2 sm:p-3 bg-primary md:hidden cursor-pointer">
                     <Category2 size="24" onClick={toggleMenu} className="text-white" />
