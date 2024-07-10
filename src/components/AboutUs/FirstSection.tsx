@@ -19,7 +19,7 @@ const FirstSection = () => {
                     <Image src={aboutImg} alt="Machine Image" className="h-full object-cover object-center md:w-[80%] rounded-2xl" />
                 </div>
             </section>
-            <div className="flex flex-col gap-y-5 md:gap-y-0 sm:flex-row sm:justify-between sm:gap-x-5 mt-5">
+            <div className="flex flex-col gap-y-5 md:gap-y-0 sm:flex-row sm:justify-between sm:gap-x-5 mt-5 md:mt-8">
                 <Image src={aboutImg1} alt="Machinery images" className="sm:w-[49%] object-cover object-center rounded-2xl h-[30rem]" />
                 <Image src={aboutImg2} alt="Machinery images" className="sm:w-[49%] object-cover object-center rounded-2xl h-[30rem]" />
             </div>
