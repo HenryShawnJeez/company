@@ -23,7 +23,6 @@ export default function Home() {
       <ScrollReveal>
         <Cards />
       </ScrollReveal>
-      <Footer />
     </main>
   );
 }

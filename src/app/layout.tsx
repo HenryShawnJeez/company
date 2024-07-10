@@ -9,8 +9,9 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 
 //Import Custom Cursor Component
-import CustomCursor from "@/components/CustomCursor";
+//import CustomCursor from "@/components/CustomCursor";
 import Nav from "@/components/HomePage/Nav";
+import Footer from "@/components/HomePage/Footer";
 
 
 export const metadata: Metadata = {
@@ -29,6 +30,7 @@ export default function RootLayout({
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
             <Nav />
             {children}
+            <Footer />
           </ThemeProvider>
       </body>
     </html>
