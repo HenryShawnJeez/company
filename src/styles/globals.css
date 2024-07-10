@@ -55,3 +55,13 @@ h1{
 .cursor-outer.click {
   transform: scale(0.8);
 }
+
+/* For the cards */
+.card:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
