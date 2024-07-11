@@ -26,10 +26,10 @@ const Faq = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setAnimate(true);
-        setTimeout(() => {
-            setCurrentNumber((prevIndex) => (prevIndex + 1) % totalNumber);
-            setAnimate(false);
-        }, 600);
+            setTimeout(() => {
+                setCurrentNumber((prevIndex) => (prevIndex + 1) % totalNumber);
+                setAnimate(false);
+            }, 600);
         }, 30000); // Change image every 30 seconds
 
         return () => clearInterval(interval);
@@ -38,7 +38,7 @@ const Faq = () => {
     return (
         <main className="flex flex-col-reverse gap-y-5 md:gap-y-0 md:flex-row md:justify-between pr-5 sm:pr-10 pl-5 sm:pl-10 md:pl-0 md:pr-20 xl:pr-32 py-6 mt-20 items-center">
             <div className="relative w-full md:w-[45%] lg:w-[48%] h-[50rem]">
-                <Image src={images[currentNumber]} alt="Faq Image" className={`w-full h-full object-cover object-center ${animate ? "scale-110 translate-x-10 translate-y-10 opacity-0 duration-500" : "duration-300 scale-100 translate-x-0 translate-y-0 opacity-100"}`}/>
+                <Image src={images[currentNumber]} alt="Faq Image" className={`w-full h-full object-cover object-center ${animate ? "scale-110 translate-x-10 translate-y-10 opacity-0 duration-500" : "duration-300 scale-100 translate-x-0 translate-y-0 opacity-100"}`} />
                 <section className="absolute h-full w-full top-0 left-0 bg-bgDark/70 flex items-end justify-center gap-x-2">
                     {images.map((image, index) => (
                         <div key={index} className={`my-4 size-3 rounded-[50%] bg-[#FF8A65] ${currentNumber === index ? "w-6 rounded-xl duration-300" : ""}`}></div>
@@ -55,9 +55,9 @@ const Faq = () => {
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2">
-                        <AccordionTrigger>How can Melvin Trade B.V. help me sell my oil and gas products?</AccordionTrigger>
+                        <AccordionTrigger>How does Melvin Trade B.V. connect me with reliable sellers of petroleum products?</AccordionTrigger>
                         <AccordionContent>
-                            We streamline the entire selling process by connecting you with credible buyers, ensuring compliance with legal and regulatory requirements, and maximizing your profitability. Our team provides expert guidance and market intelligence to help you make informed decisions and secure the best possible terms for your transactions.
+                            Melvin Trade B.V. connects you with reliable sellers of petroleum products through our extensive network and rigorous due diligence processes. We ensure that all sellers meet stringent credibility and reliability standards, adhering to all legal and regulatory requirements. Our team provides comprehensive support, from initial contact to finalizing contracts, ensuring smooth and profitable transactions. With our market intelligence and expertise, we help you secure the best possible terms and build strong, long-term partnerships.
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-3">
