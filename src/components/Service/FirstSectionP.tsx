@@ -3,9 +3,9 @@
 import { useEffect, useState } from "react";
 
 //Import Needed Icons
-import { RefreshCircle, Setting2, Diagram, Truck, SearchNormal, Briefcase } from "iconsax-react";
+import { RefreshCircle, Link21, Chart1, LampOn, ShieldTick, Card } from "iconsax-react";
 
-const FirstSection = () => {
+const FirstSectionP = () => {
     const [currentNumber, setCurrentNumber] = useState<number>(0);
 
     useEffect(() => {
@@ -21,10 +21,10 @@ const FirstSection = () => {
         setCurrentNumber((prevIndex) => (prevIndex + 1) % totalNumber);
     };
 
-    let heading: string[] = ["Procurement", "Sales & Marketing","Logistics", "Quality Control", "After-Sales Support" ];
-    let subheading: string[] = ["Sourcing Top-Quality Machinery", "Promoting Industry-Leading Equipment","Ensuring Timely Delivery", "Rigorous Quality Assurance", "Comprehensive Maintenance Services" ];
+    let heading: string[] = ["Market Analysis", "Consulting Services","Compliance Support", "Financial Services", "Transaction Facilitation" ];
+    let subheading: string[] = ["In-Depth Market Insights", "Expert Market Guidance","Adhering to Regulations", "Flexible Financing Options", "Seamless Oil & Gas Deals" ];
     // eslint-disable-next-line react/jsx-key
-    let icon = [<Setting2 variant="Bold" size="36" className="text-inherit"/>,<Diagram variant="Bold" size="36" className="text-inherit"/>,<Truck variant="Bold" size="36" className="text-inherit"/>, <SearchNormal variant="Bold" size="36" className="text-inherit"/>,<Briefcase variant="Bold" size="36" className="text-inherit"/> ];
+    let icon = [<Chart1 variant="Bold" size="36" className="text-inherit"/>,<LampOn variant="Bold" size="36" className="text-inherit"/>,<ShieldTick variant="Bold" size="36" className="text-inherit"/>, <Card variant="Bold" size="36" className="text-inherit"/>,<Link21 variant="Bold" size="36" className="text-inherit"/> ];
 
     return (
         <section className="w-[90%] xl:w-[92.5%] mx-auto">
@@ -53,4 +53,4 @@ const FirstSection = () => {
     );
 }
 
-export default FirstSection;
+export default FirstSectionP;
