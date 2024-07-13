@@ -42,10 +42,10 @@ const Nav = () => {
                     </div>
 
                     <nav className="flex flex-col gap-y-7 md:gap-y-0 md:flex-row md:items-center md:gap-x-3 lg:gap-x-5 xl:gap-x-10 mt-20 md:mt-0">
-                        <Link href="/" className={`${pathname === "/"  ? "text-primary font-bold" : "font-medium" } tracking-tight hover:text-primary duration-300`}>
+                        <Link onClick={toggleMenu} href="/" className={`${pathname === "/"  ? "text-primary font-bold" : "font-medium" } tracking-tight hover:text-primary duration-300`}>
                             Home
                         </Link>
-                        <Link href="/about" className={`${pathname === "/about" ? "text-primary font-bold" : "font-medium" } tracking-tight hover:text-primary duration-300`}>
+                        <Link onClick={toggleMenu}  href="/about" className={`${pathname === "/about" ? "text-primary font-bold" : "font-medium" } tracking-tight hover:text-primary duration-300`}>
                             About Us
                         </Link>
                         <div className="relative group" onMouseEnter={() => setIsServiceOpen(true)} onMouseLeave={() => setIsServiceOpen(false)}>
@@ -53,16 +53,16 @@ const Nav = () => {
                                 Services
                             </button>
                             <div className={`absolute left-0 mt-2 bg-bgLight md:bg-primary shadow-lg overflow-hidden transition-all duration-300 ${isServiceOpen ? 'w-40 max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}>
-                                <Link href="/services/petroleum" className="block px-4 py-3 text-textLight md:text-textDark transition duration-300 hover:bg-secondary">
+                                <Link onClick={toggleMenu} href="/services/petroleum" className="block px-4 py-3 text-textLight md:text-textDark transition duration-300 hover:bg-secondary">
                                     Petroleum
                                 </Link>
-                                <Link href="/services/machinery" className="block px-4 py-3 text-textLight md:text-textDark transition duration-300 hover:bg-secondary">
+                                <Link onClick={toggleMenu} href="/services/machinery" className="block px-4 py-3 text-textLight md:text-textDark transition duration-300 hover:bg-secondary">
                                     Machinery
                                 </Link>
                             </div>
                         </div>
                         <div className='md:hidden border-t border-gray-300 my-2'></div>
-                        <Link href="/contact" className={`${pathname === "/contact" ? "bg-bgLight text-textLight border border-textLight font-semibold" : "font-medium"} border-2 hover:bg-bgLight hover:text-textLight hover:border-textLight text-center px-5 py-3 text-textDark bg-bgDark duration-300`}>
+                        <Link onClick={toggleMenu} href="/contact" className={`${pathname === "/contact" ? "bg-bgLight text-textLight border border-textLight font-semibold" : "font-medium"} border-2 hover:bg-bgLight hover:text-textLight hover:border-textLight text-center px-5 py-3 text-textDark bg-bgDark duration-300`}>
                             Contact
                         </Link>
                         <div className='absolute bottom-4 right-4 md:static'>
