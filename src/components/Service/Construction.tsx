@@ -37,17 +37,17 @@ const Construction = () => {
             <section className="mt-14">
                 <p className="text-sm md:text-base xl:text-lg font-semibold">Construction Equipment Inventory</p>
                 <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 mt-4">
-                    <p className="flex gap-x-1 items-center">Excavators<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Bulldozers <TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Backhoe Loaders <TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Cranes <TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Dump Trucks <TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Concrete Mixers <TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Asphalt Pavers <TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Road Rollers <TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Skid Steer Loaders <TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Pile Drivers <TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Compactors <TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Excavators</p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Bulldozers </p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Backhoe Loaders </p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Cranes </p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Dump Trucks </p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Concrete Mixers </p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Asphalt Pavers </p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Road Rollers </p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Skid Steer Loaders </p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Pile Drivers </p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Compactors </p>
                 </div>
                 <div className="mt-10 flex flex-col gap-y-5">
                     <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3">

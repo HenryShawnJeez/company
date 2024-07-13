@@ -37,16 +37,16 @@ const Agriculture = () => {
             <section className="mt-14">
                 <p className="text-sm md:text-base xl:text-lg font-semibold">Agricultural Equipment Inventory</p>
                 <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 mt-4">
-                    <p className="flex gap-x-1 items-center">Tractors<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Combine Harvesters<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Ploughs<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Seeders<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Balers<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Sprayers<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Tillage Equipment<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Irrigation Systems<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Cultivators<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Mowers<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Tractors</p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Combine Harvesters</p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Ploughs</p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Seeders</p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Balers</p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Sprayers</p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Tillage Equipment</p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Irrigation Systems</p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Cultivators</p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Mowers</p>
                 </div>
                 <div className="mt-10 flex flex-col gap-y-5">
                     <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3">

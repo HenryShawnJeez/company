@@ -37,16 +37,16 @@ const Industrial = () => {
             <section className="mt-14">
                 <p className="text-sm md:text-base xl:text-lg font-semibold">Industrial Equipment Inventory</p>
                 <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 mt-4">
-                    <p className="flex gap-x-1 items-center">CNC Machines<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">3D Printers<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Welding Equipment<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Laser Cutting Machines<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Press Brakes<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Hydraulic Presses<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Grinding Machines<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Drilling Machines<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Sawing Machines<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
-                    <p className="flex gap-x-1 items-center">Injection Molding Machines<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />CNC Machines</p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />3D Printers</p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Welding Equipment</p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Laser Cutting Machines</p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Press Brakes</p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Hydraulic Presses</p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Grinding Machines</p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Drilling Machines</p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Sawing Machines</p>
+                    <p className="flex gap-x-1 items-center"><TickSquare size="20" className="text-green-600 dark:text-green-400 shrink-0" variant="Bold" />Injection Molding Machines</p>
                 </div>
                 <div className="mt-10 flex flex-col gap-y-5">
                     <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3">
