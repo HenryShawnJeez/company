@@ -1,10 +1,13 @@
 "use client"
 import { useState } from "react";
 
+//Import Needed Components
+import Construction from "./Construction";
+import Agriculture from "./Agriculture";
 
 //Import Needed Icons
 import { ArrowRight } from "iconsax-react";
-import Construction from "./Construction";
+
 
 const MachineList = () => {
 
@@ -32,6 +35,7 @@ const MachineList = () => {
                        <h1 className="text-base md:text-lg xl:text-xl font-semibold capitalize">{activeTopic} Machinery</h1> 
                     </div>
                     {activeTopic === "construction" && <Construction />}
+                    {activeTopic === "agricultural" && <Agriculture />}
                 </section>
             </div>
         </main>

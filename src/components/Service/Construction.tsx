@@ -11,9 +11,7 @@ import crane from "../../../public/crane.jpeg";
 //Import Needed Icons
 import { TickSquare } from "iconsax-react";
 
-// import tractor from "../../../public/tractors.jpeg";
-// import sprayers from "../../../public/sprayers.jpeg";
-// import harvesters from "../../../public/haversters.jpeg";
+
 // import printer from "../../../public/faq3.jpeg";
 // import sawing from "../../../public/sawing.jpeg";
 // import welding from "../../../public/welding.jpeg";
@@ -80,7 +78,7 @@ const Construction = () => {
                     </section>
                 </div>
             </section>
-            <p className="my-10">Our extensive inventory is readily available. For inquiries or assistance, please contact our <span><Link href="/contact" className="text-primary hover:text-secondary duration-300 ml-1 font-semibold cursor-pointer"> TEAM</Link></span></p>
+            <p className="mt-10">Our extensive inventory is readily available. For inquiries or assistance, please contact our <span><Link href="/contact" className="text-primary hover:text-secondary duration-300 ml-1 font-semibold cursor-pointer"> TEAM</Link></span></p>
         </main>
     );
 }
