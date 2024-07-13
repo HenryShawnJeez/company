@@ -35,7 +35,7 @@ const Agriculture = () => {
                 <CarouselNext />
             </Carousel>
             <section className="mt-14">
-                <p className="text-sm md:text-base xl:text-lg font-semibold">Construction Equipment Inventory</p>
+                <p className="text-sm md:text-base xl:text-lg font-semibold">Agricultural Equipment Inventory</p>
                 <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 mt-4">
                     <p className="flex gap-x-1 items-center">Tractors<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>
                     <p className="flex gap-x-1 items-center">Combine Harvesters<TickSquare size="20" className="text-green-600 dark:text-green-400" variant="Bold" /></p>

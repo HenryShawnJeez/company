@@ -11,10 +11,6 @@ import crane from "../../../public/crane.jpeg";
 //Import Needed Icons
 import { TickSquare } from "iconsax-react";
 
-
-// import printer from "../../../public/faq3.jpeg";
-// import sawing from "../../../public/sawing.jpeg";
-// import welding from "../../../public/welding.jpeg";
 const images = [excavators, concrete, crane];
 
 const Construction = () => {

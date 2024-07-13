@@ -4,6 +4,7 @@ import { useState } from "react";
 //Import Needed Components
 import Construction from "./Construction";
 import Agriculture from "./Agriculture";
+import Industrial from "./Industrial";
 
 //Import Needed Icons
 import { ArrowRight } from "iconsax-react";
@@ -36,6 +37,7 @@ const MachineList = () => {
                     </div>
                     {activeTopic === "construction" && <Construction />}
                     {activeTopic === "agricultural" && <Agriculture />}
+                    {activeTopic === "industrial" && <Industrial />}
                 </section>
             </div>
         </main>
