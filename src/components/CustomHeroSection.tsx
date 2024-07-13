@@ -24,4 +24,3 @@ const CustomHeroSection = ({ pageName, currentPage, imgSrc }: CustomHeroSectionP
 }
 
 export default CustomHeroSection;
-//py-6 px-5 sm:px-10 md:px-20 xl:px-32

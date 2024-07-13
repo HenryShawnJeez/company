@@ -21,10 +21,10 @@ const FirstSection = () => {
         setCurrentNumber((prevIndex) => (prevIndex + 1) % totalNumber);
     };
 
-    let heading: string[] = ["Procurement", "Sales & Marketing","Logistics", "Quality Control", "After-Sales Support" ];
-    let subheading: string[] = ["Sourcing Top-Quality Machinery", "Promoting Industry-Leading Equipment","Ensuring Timely Delivery", "Rigorous Quality Assurance", "Comprehensive Maintenance Services" ];
+    let heading: string[] = ["Procurement", "Sales & Marketing", "Logistics", "Quality Control", "After-Sales Support"];
+    let subheading: string[] = ["Sourcing Top-Quality Machinery", "Promoting Industry-Leading Equipment", "Ensuring Timely Delivery", "Rigorous Quality Assurance", "Comprehensive Maintenance Services"];
     // eslint-disable-next-line react/jsx-key
-    let icon = [<Setting2 variant="Bold" size="36" className="text-inherit"/>,<Diagram variant="Bold" size="36" className="text-inherit"/>,<Truck variant="Bold" size="36" className="text-inherit"/>, <SearchNormal variant="Bold" size="36" className="text-inherit"/>,<Briefcase variant="Bold" size="36" className="text-inherit"/> ];
+    let icon = [<Setting2 variant="Bold" size="36" className="text-inherit" />, <Diagram variant="Bold" size="36" className="text-inherit" />, <Truck variant="Bold" size="36" className="text-inherit" />, <SearchNormal variant="Bold" size="36" className="text-inherit" />, <Briefcase variant="Bold" size="36" className="text-inherit" />];
 
     return (
         <section className="w-[90%] xl:w-[92.5%] mx-auto">
@@ -32,12 +32,12 @@ const FirstSection = () => {
                 {[...Array(5)].map((_, index) => (
                     <div
                         key={index}
-                        className={`transition-all duration-300 min-w-[16rem] w-[19%] p-4 h-40 rounded-md border border-gray-300 flex flex-col items-center justify-center text-center gap-y-1
-                    ${currentNumber === index ? "bg-blue-600 h-44 text-white transition-all duration-300" : "bg-bgLight text-gray-400"}`}
+                        className={`transition-all duration-300 min-w-[16rem] w-[19%] p-4 h-40 flex flex-col items-center justify-center text-center gap-y-1
+                    ${currentNumber === index ? "bg-primary h-44 text-white transition-all duration-300" : "bg-bgLight text-gray-400"}`}
                         style={{ transform: `translateX(-${currentNumber * 100}%)` }}
-                    >   
+                    >
                         {icon[index]}
-                        <h1 className={`${currentNumber === index ? "text-white" : "text-blue-600"} uppercase font-semibold text-base md:text-lg xl:text-xl `}>{heading[index]}</h1>
+                        <h1 className={`${currentNumber === index ? "text-white" : "text-primary"} uppercase font-semibold text-base md:text-lg xl:text-xl `}>{heading[index]}</h1>
                         <p>{subheading[index]}</p>
 
                     </div>
