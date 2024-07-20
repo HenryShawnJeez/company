@@ -15,7 +15,7 @@ const Footer = () => {
                         <h1 className="font-semibold text-sm md:text-base xl:text-lg">Company Details</h1>
                         <p><span className="text-primary mr-1 font-medium">Address:</span>Einsteinstraat 26, 3281 NJ Numansdorp, Netherlands</p>
                         <p><span className="text-primary mr-1 font-medium">Email:</span>Contact@melvintradebv.com</p>
-                        <p><span className="text-primary mr-1 font-medium">Call or Chat us:</span>+3197006520618</p>
+                        <p><span className="text-primary mr-1 font-medium">Call or Chat us:</span>+3197006521872</p>
                     </div>
                     <div className="flex flex-col gap-y-2">
                         <h1 className="font-semibold text-sm md:text-base xl:text-lg">Quick links</h1>
