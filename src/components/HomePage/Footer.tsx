@@ -1,11 +1,18 @@
+"use client";
+
+import { ChangeEvent, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { toast } from "sonner";
 
 //Import Needed Images
 import logo from "../../../public/logo.svg"
 
 
 const Footer = () => {
+
+    const [email, setEmail] = useState<string>("")
+
     return (
         <section>
             <main className="px-5 sm:px-10 md:px-20 xl:px-32 py-10 mt-20 bg-bgLight flex flex-col gap-y-10 md:gap-y-0 gap-x-5 md:flex-row text-textLight md:justify-between border-t border-primary/10 dark:border-none">
@@ -27,8 +34,11 @@ const Footer = () => {
                     <div className="w-fit">
                         <h1 className="font-semibold text-sm md:text-base xl:text-lg">Newsletter Sign up</h1>
                         <form className="flex border border-primary mt-4 p-1">
-                            <input type="email" name="email" id="email" className="px-2 sm:px-3 lg:px-5 py-3 focus:outline-none caret-primary bg-inherit" placeholder="Johndoe@email.com" />
-                            <input type="submit" value="Join Newsletter" className="cursor-pointer px-5 py-3 bg-primary hover:bg-secondary duration-300 text-textDark" />
+                            <input type="email" value={email} name="email" id="email" className="px-2 sm:px-3 lg:px-5 py-3 focus:outline-none caret-primary bg-inherit" placeholder="Johndoe@email.com" onChange={(e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}/>
+                            <input type="button" value="Join Newsletter" className="cursor-pointer px-5 py-3 bg-primary hover:bg-secondary duration-300 text-textDark" onClick={() => {
+                                toast.success(`Your email ${email} was successfully added to our Newsletter list.`)
+                                setEmail("")
+                            }} />
                         </form>
                     </div>
                 </section>

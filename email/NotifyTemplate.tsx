@@ -1,11 +1,16 @@
 import { Body, Container, Head, Heading, Hr, Html, Img, Link, Preview, Section, Text } from "@react-email/components";
 
+type NotifyProps = {
+  name: string;
+  email: string;
+  message: string;
+}
 
-export default function LoginAuthenticationTemplate() {
+export default function LoginAuthenticationTemplate({ name, email, message }: NotifyProps) {
   return (
     <Html>
       <Head />
-      <Preview>Authentication and Verification</Preview>
+      <Preview>Notification</Preview>
       <Body style={main}>
         <Container style={container}>
           <Section style={coverSection}>
@@ -14,20 +19,12 @@ export default function LoginAuthenticationTemplate() {
             <Section style={upperSection}>
               <Heading style={h1}>Contact Request</Heading>
               <Text style={mainText}>
-                  
+                <p>Name: {name}</p>
+                <p>Email: {email}</p>
+                <p>Message: {message}</p>
               </Text>
-              <Section style={verificationSection}>
-                <Text style={verifyText}></Text>
-
-                <Text style={validityText}>
-                </Text>
-              </Section>
             </Section>
             <Hr />
-            <Section style={lowerSection}>
-              <Text style={cautionText}>
-              </Text>
-            </Section>
           </Section>
           <Text style={footerText}>
             This message was produced and distributed by Melvin Trade.

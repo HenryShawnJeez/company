@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { inter, hedvig } from "@/lib/fonts";
 import "../styles/globals.css";
+import { Toaster } from "sonner";
 
 //Import Utils
 import { cn } from "@/lib/utils";
@@ -30,6 +31,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Nav />
           {children}
+          <Toaster richColors position="top-center" closeButton />
           <Footer />
         </ThemeProvider>
       </body>
