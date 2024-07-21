@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { inter, hedvig } from "@/lib/fonts";
-import Head from 'next/head';
 import "../styles/globals.css";
 
 //Import Utils
@@ -27,9 +26,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <meta name="google-site-verification" content="bjldiuIGMNjHf9BnCvMV98cHekJlD-Lqf0TdjPHrFhg" />
-      </Head>
       <body className={cn("antialiased overflow-x-hidden text-xs md:text-sm xl:text-base bg-bgLight dark:bg-bgDark text-textLight dark:text-textDark", `${inter.variable} ${hedvig.variable}`)}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Nav />
