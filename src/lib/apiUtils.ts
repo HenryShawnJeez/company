@@ -23,14 +23,14 @@ export const makeApiRequest = (
       if (onSuccess) {
         onSuccess(response);
       }
-      console.log(response)
+      //console.log(response)
       return response;
     })
     .catch((error: any) => {
       if (onError) {
         onError(error);
       }
-      console.log(error)
+      //console.log(error)
       throw error;
     });
 };
