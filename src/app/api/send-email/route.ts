@@ -27,7 +27,7 @@ export async function POST(request: Request) {
         }
 
       await sendEmail({
-        to: "Charleschukwuemeka47@gmail.com",
+        to: "Adobemandy4@gmail.com",
         subject,
         html: emailHtml,
       });
